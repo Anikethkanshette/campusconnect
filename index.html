@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jio Hotstar Clone</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="https://i.imgur.com/SQn5F9y.png" alt="Jio Hotstar"/>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">TV</a></li>
+      <li><a href="#">Movies</a></li>
+      <li><a href="#">Sports</a></li>
+      <li><a href="#">Premium</a></li>
+    </ul>
+    <div class="search-user">
+      <input type="text" placeholder="Search" id="searchInput"/>
+      <img src="https://i.imgur.com/9v9tZp6.png" alt="User" class="user-icon" id="loginBtn"/>
+    </div>
+  </nav>
+
+  <header class="featured">
+    <img src="https://i.imgur.com/l49aYS3.jpg" alt="featured" class="featured-img"/>
+    <div class="featured-overlay">
+      <h2>Avengers: Endgame</h2>
+      <p>The final battle begins. Earth's mightiest heroes assemble for the ultimate showdown.</p>
+      <button class="play-btn" id="featuredPlay"><span>&#9654;</span> Watch Now</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="carousel-section">
+      <h3>Popular Movies</h3>
+      <div class="carousel" id="moviesCarousel"></div>
+    </section>
+    <section class="carousel-section">
+      <h3>Top TV Shows</h3>
+      <div class="carousel" id="tvCarousel"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Jio Hotstar Clone. For demo purposes only.</p>
+  </footer>
+
+  <!-- Video Modal -->
+  <div class="modal" id="videoModal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <video id="modalVideo" controls autoplay poster="">
+        <source id="modalSource" src="" type="video/mp4">
+        Your browser does not support video playback.
+      </video>
+      <div class="modal-title" id="modalTitle"></div>
+    </div>
+  </div>
+
+  <!-- Login Modal -->
+  <div class="modal" id="loginModal">
+    <div class="modal-content login-popup">
+      <span class="close-btn" id="closeLogin">&times;</span>
+      <h2>Sign In</h2>
+      <input type="text" placeholder="Email or Mobile"/>
+      <input type="password" placeholder="Password"/>
+      <button class="login-btn">Login</button>
+      <p class="login-note">Demo only. No credentials needed.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
